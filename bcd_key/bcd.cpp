@@ -50,6 +50,7 @@ void bcd::printChar(char character){
         case '*': bcd::printWord("STAR"); break;
         case '#': bcd::printWord("HASH"); break;
         case 'Z': a();b();d();e(); break;
+        case '=': g();d();break;
         default: 
                 h();
                  break;
@@ -67,6 +68,7 @@ void bcd::setDigit(int digit){
         case 1: PORTB = B11010000; break;
         case 2: PORTB = B10110000; break;
         case 3: PORTB = B01110000; break;
+        case 4: PORTB = B00000000; break;
       }
   }
 
